@@ -46,7 +46,7 @@ compoundSubject([
 	'delectable halved Rainier cherries'
 ]).delimitWith(';')
 	.delimitAll()
-	.make()
+	.make();
 
 // 'a very crunchy Honeycrisp apple; bananas at the pinnacle of ripeness; and delectable halved Rainier cherries'
 ```
