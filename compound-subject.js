@@ -62,7 +62,7 @@
 				upToLastTwo,
 				lastTwo;
 
-			if (!arrayOfStrings instanceof Array) {
+			if (typeof arrayOfStrings === 'undefined' || !arrayOfStrings instanceof Array) {
 				return '';
 			}
 
@@ -90,12 +90,12 @@
 
 
 	// Node
-	if (module) {
+	if (typeof module !== 'undefined') {
 		module.exports = compoundSubject;
 	}
 
 	// Browser
-	else if (window) {
+	else if (typeof window !== 'undefined') {
 		window.compoundSubject = compoundSubject;
 	}
 
