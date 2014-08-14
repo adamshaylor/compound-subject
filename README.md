@@ -5,17 +5,41 @@ A tiny JavaScript library for converting arrays of strings to compound subjects
 
 ## Installation
 
-Node:
+### Node
+
+In your project directory:
 
 ```shell
-npm install compound-subject
+npm install --save compound-subject
 ```
 
-Bower:
+At the top of your module:
+
+```javascript
+var compoundSubject = require('compound-subject');
+```
+
+### Bower
+
+In your project directory:
 
 ```shell
 bower install compound-subject
 ```
+
+In your HTML:
+
+```html
+<script src="bower_components/compound-subject/compound-subject.min.js"></script>
+```
+
+Or if you want the dev version:
+
+```html
+<script src="bower_components/compound-subject/compound-subject.js"></script>
+```
+
+`compoundSubject` will be defined in the global scope (i.e. `window`).
 
 ## Usage
 
