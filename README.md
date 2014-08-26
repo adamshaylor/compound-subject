@@ -24,7 +24,7 @@ var compoundSubject = require('compound-subject');
 In your project directory:
 
 ```shell
-bower install compound-subject
+bower install --save compound-subject
 ```
 
 In your HTML:
