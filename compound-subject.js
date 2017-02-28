@@ -58,7 +58,8 @@
 
 		wrapperObject.make = function () {
 
-			var combinedEndWith = delimitAll ? delimitWith + ' ' + endWith + ' ' : ' ' + endWith + ' ',
+		    var combinedEndWith = (delimitAll && arrayOfStrings.length > 2) ?
+			delimitWith + ' ' + endWith + ' ' : ' ' + endWith + ' ',
 				upToLastTwo,
 				lastTwo;
 
@@ -72,7 +73,7 @@
 
 			lastTwo = arrayOfStrings
 				.slice(arrayOfStrings.length - 2)
-				.join(combinedEndWith);				
+				.join(combinedEndWith);
 
 			if (!upToLastTwo.length) {
 				return lastTwo;

@@ -15,4 +15,10 @@ describe('#delimitAll()', function () {
 		'apple, banana and cherry'
 	)});
 
+    it('should not use the delimiter when there are only two items', function () {
+	assert.equal(
+		compoundSubject(['apple', 'banana']).delimitAll().make(),
+		'apple and banana'
+	)});
+
 });
