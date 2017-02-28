@@ -3,6 +3,11 @@ var assert = require('assert'),
 
 describe('#delimitAll()', function () {
 
+    it('should handle undefined input', function () {
+        assert.equal(
+            compoundSubject(undefined).delimitAll().make(),
+            '')});
+
     it('should delimit all items up until the ending item', function () {
 	assert.equal(
 		compoundSubject(['apple', 'banana', 'cherry']).delimitAll().make(),

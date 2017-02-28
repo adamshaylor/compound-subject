@@ -58,14 +58,14 @@
 
 		wrapperObject.make = function () {
 
-		    var combinedEndWith = (delimitAll && arrayOfStrings.length > 2) ?
-			delimitWith + ' ' + endWith + ' ' : ' ' + endWith + ' ',
-				upToLastTwo,
-				lastTwo;
-
 			if (typeof arrayOfStrings === 'undefined' || !arrayOfStrings instanceof Array) {
 				return '';
 			}
+
+			var combinedEndWith = (delimitAll && arrayOfStrings.length > 2) ?
+				delimitWith + ' ' + endWith + ' ' : ' ' + endWith + ' ',
+					upToLastTwo,
+					lastTwo;
 
 			upToLastTwo = arrayOfStrings
 				.slice(0, -2)
