@@ -1,6 +1,6 @@
 {
   "name": "compound-subject",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny JavaScript library for converting arrays of strings to compound subjects",
   "main": "compound-subject.js",
   "dependencies": {},
@@ -10,7 +10,7 @@
     "mocha": "^3.2.0"
   },
   "scripts": {
-    "test": "expresso test/*"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
